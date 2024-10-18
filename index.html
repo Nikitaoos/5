@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="custom.js"></script>
+</head>
+
+<body>
+    <header class="text-center">
+        <h1>Онлайн магазин телефонов</h1>
+    </header>
+    <div class="container-fluid">
+        <h2>Покупка</h2>
+        <form name="calc" onsubmit="return false;">
+            <div class="row">
+                <div class="col-3">
+                    <h3>Название товара:</h3>
+                </div>
+                <div class="col-2">
+                    <h3>Цена покупки</h3>
+                </div>
+                <div class="col-2">
+                    <h3>Количество</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Apple iPhone 16 Pro</p>
+                </div>
+                <div class="col-2">
+                    <input name="price" type="number" value="117134" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count" type="number"  value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Samsung Galaxy S24 Ultra 12/1TB Black</p>
+                </div>
+                <div class="col-2">
+                    <input name="price1" type="number" value="123988" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count1" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Google Pixel 9 Pro XL 16/256 ГБ</p>
+                </div>
+                <div class="col-2">
+                    <input name="price2" type="number" value="116622" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count2" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Xiaomi 14 Ultra 16/512 ГБ</p>
+                </div>
+                <div class="col-2">
+                    <input name="price3" type="number" value="114927" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count3" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>OnePlus 12, 16/1Tb</p>
+                </div>
+                <div class="col-2">
+                    <input name="price4" type="number" value="84051" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count4" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Xiaomi POCO X6 Pro 12/512 ГБ</p>
+                </div>
+                <div class="col-2">
+                    <input name="price5" type="number" value="28181" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count5" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Realme GT 6 16+512 ГБ</p>
+                </div>
+                <div class="col-2">
+                    <input name="price6" type="number" value="52926" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count6" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>HUAWEI Pura 70 Ultra 16/512</p>
+                </div>
+                <div class="col-2">
+                    <input name="price7" type="number" value="83399" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count7" type="number" value="0" min="0">
+                </div>
+            </div>
+            <button onclick="calculate();">Стоимость корзины</button>
+        </form>
+        <div id="result"></div> 
+        </div>
+
+</body>
+</html>
